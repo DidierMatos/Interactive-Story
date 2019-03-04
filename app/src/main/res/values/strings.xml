@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Interactive Story</string>
+    <string name="app_name">Señales de Marte</string>
+    <string name="key_name">nombre</string>
+    <string name="signals_from_mars_to_title_image">Signals from Mars to title image</string>
 </resources>
