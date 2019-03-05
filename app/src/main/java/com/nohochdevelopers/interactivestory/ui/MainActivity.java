@@ -1,4 +1,4 @@
-package com.nohochdevelopers.interactivestory;
+package com.nohochdevelopers.interactivestory.ui;
 
 import android.content.Intent;
 import android.content.res.Resources;
@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import com.nohochdevelopers.interactivestory.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
     private void startStory(String name) {
 
         Intent intent = new Intent(this, StoryActivity.class);
-        Resources resources = getResources();
-        String key = resources.getString(R.string.key_name);
+        Resources resources = getResources(); //crea la instancia para obtener resources
+        String key = resources.getString(R.string.key_name);    //se almacena en key
 
 
 
