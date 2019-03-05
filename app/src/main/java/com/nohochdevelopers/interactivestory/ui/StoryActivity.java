@@ -24,7 +24,7 @@ public class StoryActivity extends AppCompatActivity {
         Log.d(TAG, name);
         //Toast.makeText(this,name, Toast.LENGTH_SHORT).show();
 
-        
+
 
 
     }
