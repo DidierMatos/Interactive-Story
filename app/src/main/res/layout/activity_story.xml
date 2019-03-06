@@ -56,7 +56,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/page0"
-                tools:src="@drawable/page0" />
+                tools:src="@drawable/page0"
+                android:contentDescription="TODO" />
 
             <TextView
                 android:id="@+id/storyTextView"
