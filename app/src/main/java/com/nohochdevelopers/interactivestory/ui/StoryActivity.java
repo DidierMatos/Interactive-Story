@@ -59,7 +59,8 @@ public class StoryActivity extends AppCompatActivity {
         storyImageView.setImageDrawable(image);
 
         if(page.isFinalPage()){
-
+            choice1Button.setVisibility(View.INVISIBLE);
+            choice2Button.setText(getString(R.string.play_again_button_text));
 
         }else {
 
