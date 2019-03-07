@@ -23,6 +23,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
+        android:text="@string/page2_choice1"
         android:textColor="#3A8AEC"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/choice2Button"
@@ -34,8 +35,6 @@
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@android:color/white"
-        android:fillViewport="true"
         app:layout_constraintBottom_toTopOf="@+id/choice1Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,31 +42,32 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/storyImageView"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
+                android:contentDescription="TODO"
                 android:scaleType="fitXY"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/page0"
-                tools:src="@drawable/page0"
-                android:contentDescription="TODO" />
+                tools:src="@drawable/page0" />
 
             <TextView
                 android:id="@+id/storyTextView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_height="235dp"
                 android:lineSpacingExtra="8sp"
+                android:text="@string/page0"
                 android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/choice1Button"
+                app:layout_constraintTop_toBottomOf="@+id/storyImageView"
+                tools:layout_editor_absoluteX="0dp"
                 tools:text="@string/page0" />
         </LinearLayout>
     </ScrollView>
