@@ -27,10 +27,10 @@ public class MainActivity extends AppCompatActivity {
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name = nameField.getText().toString();
+                String name = nameField.getText().toString(); //obtiene el nombre del EditText para almacenarlo
 
                 //Toast.makeText(MainActivity.this, name, Toast.LENGTH_SHORT).show();
-                startStory(name);
+                startStory(name); // llama al metodo pasandole el parametro name
             }
         });
 
@@ -38,14 +38,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void startStory(String name) {
 
-        Intent intent = new Intent(this, StoryActivity.class);
-        Resources resources = getResources(); //crea la instancia para obtener resources
-        String key = resources.getString(R.string.key_name);    //se almacena en key
+        Intent intent = new Intent(this, StoryActivity.class);  // instanciando el intent y declarando el activity hacia donde sera enviada
+        Resources resources = getResources(); //crea la instancia para obtener resources del archivo strings.xml
+        String key = resources.getString(R.string.key_name);    //se almacena en key obteniendola del archivo strings.xml
 
 
 
-        intent.putExtra(key, name);
-        startActivity(intent);
+        intent.putExtra(key, name); // estableciendo el valor con una llave de identificacion
+        startActivity(intent); //la informacion almacenada en intent es enviada a la siguiente activity
 
     }
 }

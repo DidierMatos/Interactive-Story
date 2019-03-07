@@ -37,8 +37,8 @@ public class StoryActivity extends AppCompatActivity {
         choice2Button = (Button)findViewById(R.id.choice2Button);
 
 
-        Intent intent = getIntent();
-        name = intent.getStringExtra(getString(R.string.key_name));
+        Intent intent = getIntent(); //accede al intent para obtener la informacion
+        name = intent.getStringExtra(getString(R.string.key_name)); // obtiene
         if(name == null && name.isEmpty()){
             name = "Friend";
         }
