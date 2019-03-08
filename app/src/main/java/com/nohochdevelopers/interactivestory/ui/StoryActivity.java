@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.nohochdevelopers.interactivestory.R;
 import com.nohochdevelopers.interactivestory.model.Page;
@@ -38,6 +39,7 @@ public class StoryActivity extends AppCompatActivity {
 
 
         Intent intent = getIntent(); //accede al intent para obtener la informacion
+        name = intent.getStringExtra("key");
         name = intent.getStringExtra(getString(R.string.key_name)); // obtiene
         if(name == null && name.isEmpty()){
             name = "Friend";
@@ -58,20 +60,22 @@ public class StoryActivity extends AppCompatActivity {
         Drawable image = ContextCompat.getDrawable(this, page.getImageId());
         storyImageView.setImageDrawable(image);
 
+        String pageText = getString(page.getTextId());
+        //String.format(pageText, name);
+        storyTextView.setText(pageText);
+
         if(page.isFinalPage()){
             choice1Button.setVisibility(View.INVISIBLE);
             choice2Button.setText(getString(R.string.play_again_button_text));
-
+            //Toast.makeText(this, "is Final Page", Toast.LENGTH_SHORT).show();
+            
         }else {
-
+            Toast.makeText(this, "IS'NT Final Page", Toast.LENGTH_SHORT).show();
             loadButtons(page);
         }
     }
 
     private void loadButtons(final Page page) {
-        String pageText = getString(page.getTextId());
-        //String.format(pageText, name);
-        storyTextView.setText(pageText);
 
         choice1Button.setText(page.getChoice1().getTextId());
         choice1Button.setOnClickListener(new View.OnClickListener() {
