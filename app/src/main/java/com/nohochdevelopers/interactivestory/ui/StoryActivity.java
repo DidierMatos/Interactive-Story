@@ -115,6 +115,7 @@ public class StoryActivity extends AppCompatActivity {
             super.onBackPressed();
         }else{
             loadPage(pageStack.pop());
+            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
         }
 
     }
