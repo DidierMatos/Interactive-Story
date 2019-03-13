@@ -1,4 +1,4 @@
-package com.nohochdevelopers.interactivestory.ui;
+package com.ndevelopers.interactivestory.ui;
 
 import android.content.Intent;
 import android.content.res.Resources;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.nohochdevelopers.interactivestory.R;
+import com.ndevelopers.interactivestory.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,6 +1,6 @@
-package com.nohochdevelopers.interactivestory.model;
+package com.ndevelopers.interactivestory.model;
 
-import com.nohochdevelopers.interactivestory.R;
+import com.ndevelopers.interactivestory.R;
 
 public class Story {
 

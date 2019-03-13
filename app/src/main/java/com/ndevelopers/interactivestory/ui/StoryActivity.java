@@ -1,4 +1,4 @@
-package com.nohochdevelopers.interactivestory.ui;
+package com.ndevelopers.interactivestory.ui;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -12,9 +12,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.nohochdevelopers.interactivestory.R;
-import com.nohochdevelopers.interactivestory.model.Page;
-import com.nohochdevelopers.interactivestory.model.Story;
+import com.ndevelopers.interactivestory.R;
+import com.ndevelopers.interactivestory.model.Page;
+import com.ndevelopers.interactivestory.model.Story;
 
 import java.util.Stack;
 

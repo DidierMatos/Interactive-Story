@@ -1,4 +1,4 @@
-package com.nohochdevelopers.interactivestory.model;
+package com.ndevelopers.interactivestory.model;
 
 public class Choice {
 

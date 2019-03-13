@@ -1,4 +1,4 @@
-package com.nohochdevelopers.interactivestory;
+package com.ndevelopers.interactivestory;
 
 import org.junit.Test;
 
